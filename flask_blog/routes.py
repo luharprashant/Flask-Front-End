@@ -97,6 +97,7 @@ def process_video(process_video):
 	return process
 
 @app.route("/upload", methods=["GET", "POST"])
+@login_required
 def upload():
 	form = VideoUploadForm()
 	if form.validate_on_submit():
