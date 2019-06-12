@@ -2,11 +2,11 @@
 
 #To get the server up and running :
 1) For Linux:
-   `$ export FLASK_APP=hello
-    $ flask run`
+   `$ export FLASK_APP=hello`<br/>
+   `$ flask run`
    For Windows:
-   `> $env:FLASK_APP = "hello"
-    > flask run`
+   `> $env:FLASK_APP = "hello"`<br/>
+   `> flask run`
 2) `$ python run.py`
 
 #To generate database
