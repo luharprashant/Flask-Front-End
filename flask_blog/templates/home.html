@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Home Page</h1>
+    {% for post in videos %}
+        <article class="media content-section">
+            <div class="media-body">
+              <div class="article-metadata">
+                Title: <a class="mr-2" href="#">{{ post.title }}</a>
+                <small class="text-muted">{{ post.date }}</small>
+              </div>
+              Player Name: <h2><a class="article-title" href="#">{{ post.player }}</a></h2>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
