@@ -1,11 +1,15 @@
 # Flask-Front-End
 
+# packages required
+`flask`, `flask_login`, `flask_wtf`, `flask-sqlalchemy`, `flask-crypt`
+
+
 # To get the server up and running :
 1) For Linux:<br/>
-   `$ export FLASK_APP=hello`<br/>
+   `$ export FLASK_APP=flask_blog.py`<br/>
    `$ flask run`<br/>
    For Windows:<br/>
-   `> $env:FLASK_APP = "hello"`<br/>
+   `> $env:FLASK_APP = "flask_blog.py"`<br/>
    `> flask run`<br/>
 2) `$ python run.py`
 
