@@ -1,6 +1,6 @@
-# Flask-Front-End
+# Flask front end for process the uploaded video by the user
 
-# packages required
+# Packages required
 `flask`, `flask_login`, `flask_wtf`, `flask-sqlalchemy`, `flask-crypt`
 
 
