@@ -87,6 +87,11 @@ def account():
 	return render_template('account.html',title='Account',image=image,form=form)
 
 def process_video(process_video):
+	random_hex = secrets.token_hex(8)
+	_, v_ext = os.path.splitext(process_video.filename)
+	video_fn = random_hex + v_ext
+	video_path = os.path.join(app.root_path, 'static/videos/', video_fn)
+	process_video.save(video_path)
 	# actual processig of the video i.e. analytics code using the model 
 	process = 'Okay'
 	return process
